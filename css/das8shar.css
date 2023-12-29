@@ -1,0 +1,304 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+
+}
+
+body{
+	background: #efefef;
+
+}
+
+.header{
+	width: 100%;
+	height: 393px;
+	background-image: url(../img/header.jpg);
+	background-repeat: no-repeat;/*nkary chkrknvi*/
+	background-size: cover;
+	background-position: center;/*nkary mejtex*/
+	text-align: center;
+	color: white;
+	padding: 30px 0;
+}
+
+.header >h1{
+	font-size: 50px;
+	letter-spacing: 10px;
+	margin-top: 20px;
+}
+
+.header >h2{
+	font-size: 25px;
+}
+
+.headerMenu{
+	background: #b63d32;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+
+.menu >li{
+	display: inline-block;
+	font-size: 20px;
+	margin: 12px 24px;
+
+}
+
+.menu >li >a{
+	color: white;
+	transition: 0.3s;
+}
+
+.menu >li:last-child{
+	margin: 0 0 0 100px;
+}
+
+.menu >li:first-child a {
+	color: #303631;
+}
+
+.menu >li >a:hover{
+	color: #303631;
+}
+
+.menu >li >a:last-child:hover{
+	color: #6e767d
+}
+
+.content{
+	width: 100%;
+/*	height: 560px;*/
+	text-align: center;
+	padding: 114px 300px 50px 300px;
+}
+
+.content >h1{
+	color: #b63d32;
+	font-size: 42px;
+}
+
+.content >h2{
+	font-size: 25px;
+	color: #3c1d17;
+	margin-top: 60px;
+}
+
+.content >p{
+	font-size: 20px;
+	color: #3c1d17;
+}
+
+.personalized{
+	height: 362px;
+	margin: 0 60px;
+}
+
+.personalized >img{
+	float: left;
+	clip-path: polygon(0% 0%, 94% 0%, 61% 177%, 0% 100%);
+}
+
+.personalized >h2{
+	padding: 80px 0 30px 0;
+	font-size: 25px;
+}
+
+.personalized >p{
+	/*width: 465px;
+	height: 145px;*/
+/*	float: right;*/
+	padding:0 192px 116px 0;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+.excellence{
+	height: 362px;
+	margin: 50px 60px;
+}
+
+.excellence >img{
+	float: right;
+	clip-path: polygon(7% 0%, 100% 0%, 100% 100%, 20% 100%);
+}
+
+.excellence >h2{
+	padding: 80px 0 30px 130px;
+	font-size: 25px;
+}
+
+.excellence >p{
+	padding-left: 130px;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+.insured{
+	height: 362px;
+	margin: 70px 60px 170px 60px;
+
+}
+
+.insured >img{
+	float: left;
+	clip-path: polygon(0% 0%, 94% 0%, 61% 177%, 0% 100%);
+}
+
+.insured >h2{
+	padding: 80px 0 30px 130px;
+	font-size: 25px;
+}
+
+.insured >p{
+	padding:0 180px 116px 0;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+span{
+	color: #b63d32;
+}
+
+.content >a >button{
+	width: 142px;
+	height: 40px;
+	color: white;
+	background: #b63d32;
+	border: none;
+	font-size: 17px;
+	cursor: pointer;
+	margin: 30px;
+	transition: .5s;
+}
+
+.content >a >button:hover{
+	background: #3c1d17;
+}
+
+.gallery{
+	width: 100%;
+	height: 600px;
+	background: #efefef;
+	position: relative;
+}
+
+.gallery >marquee >img{
+	height: 480px;
+}
+
+.transform{
+	position: absolute;
+	right: 300px;
+	z-index: 1;
+	transform: skew(-15deg);
+	width: 270px;
+	height: 480px;
+	background: #efefef;
+	color: #b63d32;
+	padding: 80px 40px;
+}
+
+.transform >hr{
+	width: 106px;
+	height: 6px;
+	border: none;
+	background: #e5e5e5;
+	transform: skew(15deg);
+	margin: 40px 0;
+}
+
+.transform >h2{
+	transform: skew(15deg);
+}
+
+.footerTop{
+	width: 100%;
+	height: 192px;
+	background: #3c1d17;
+	color: white;
+	text-align: center;
+	font-size: 21px;
+	padding: 30px 0;
+	line-height: bold;
+}
+
+.footerDown{
+	width: 100%;
+	height: 160px;
+	background: #b63d32;
+	color: white;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.footerDown >p >a{
+	color: white;
+	text-decoration: underline;
+}
+
+.footerDown > p > img{
+	width: 20px;
+	margin-right: 20px;
+}
+
+.footerDown > p {
+	margin-bottom: 20px;
+}
+
+.chat {
+	width: 200px;
+	height: 56px;
+	background: #b63d32;
+	color: white;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+	box-shadow: 0 0 3px 0 hsla(0,1.4%,71%,.5);
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 2;
+}
+
+.ereqDiv{
+	padding: 0 185px ;
+	width: 100%;
+}
+
+.ereqDiv >div{
+	width: 293px;
+	height: 450px;
+	display: inline-block;
+	border: 2px solid #bfbebe;
+	text-align: center;
+	margin: 0 15px;
+}
+
+.ereqDiv >div>img{
+	width: 290px;
+	height: 194px;
+	border-bottom : 1px solid black;
+}
+
+.ereqDiv >div>h2{
+	padding: 30px 50px;
+}
+
+.ereqDiv >div>a>button{
+	width: 142px;
+	height: 40px;
+	color: white;
+	background: #b63d32;
+	border: none;
+	font-size: 17px;
+	cursor: pointer;
+	margin: 30px;
+	transition: .5s;
+}
+
+.ereqDiv >div>a>button:hover{
+	
+}

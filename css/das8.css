@@ -1,0 +1,416 @@
+@font-face{
+	src: url(../fonts/MuseoW01-700.woff2);
+	font-family: myfont;
+}
+
+@font-face{
+	src: url(../fonts/1.woff);
+	font-family: newfont;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.header{
+	width: 100%;
+	height: 393px;
+	background-image: url(../img/header.jpg);
+	background-repeat: no-repeat;/*nkary chkrknvi*/
+	background-size: cover;
+	background-position: center;/*nkary mejtex*/
+	text-align: center;
+	color: white;
+	padding: 30px 0;
+}
+
+.header >h1{
+	font-size: 50px;
+	letter-spacing: 10px;
+	margin-top: 20px;
+	font-family: myfont;
+}
+
+.header >h2{
+	font-size: 25px;
+	font-family: myfont;
+}
+
+.headerMenu{
+	background: #b63d32;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+
+.menu >li{
+	display: inline-block;
+	font-size: 20px;
+	margin: 12px 24px;
+
+}
+
+.menu >li >a{
+	color: white;
+	transition: 0.3s;
+	font-family: myfont;
+}
+
+.menu >li:last-child a{
+	margin: 0 0 0 10px;
+	font-family: newfont;
+}
+
+.menu >li:first-child a {
+	color: #303631;
+}
+
+.menu >li >a:hover{
+	color: #303631;
+}
+
+.menu >li >a:last-child:hover{
+	color: #6e767d
+}
+
+.mylogo{
+	color: white;
+	padding-left: 100px;
+}
+
+.content{
+	width: 100%;
+	height: 560px;
+	text-align: center;
+	background: #efefef;
+	padding: 114px 160px;
+}
+
+.content >h1{
+	color: #b63d32;
+	font-size: 42px;
+	font-family: myfont;
+}
+
+.content >h2{
+	font-size: 25px;
+	color: #3c1d17;
+	margin-top: 60px;
+	font-family: myfont;
+}
+
+.content >p{
+	font-size: 19px;
+	color: #3c1d17;
+	font-family: newfont;
+	letter-spacing: 2.5px;
+	line-height: 1.5;
+}
+
+.slesh{
+	color: #b63d32;
+}
+
+.content >a >button{
+	width: 142px;
+	height: 40px;
+	color: white;
+	background: #b63d32;
+	border: none;
+	font-size: 17px;
+	font-family: myfont;
+	cursor: pointer;
+	margin: 30px;
+	transition: .5s;
+}
+
+.content >a >button:hover{
+	background: #3c1d17;
+}
+
+.gallery{
+	width: 100%;
+	height: 600px;
+	background: #efefef;
+	position: relative;
+}
+
+.gallery >marquee >img{
+	height: 480px;
+}
+
+.transform{
+	position: absolute;
+	right: 300px;
+	z-index: 1;
+	transform: skew(-15deg);
+	width: 270px;
+	height: 480px;
+	background: #efefef;
+	color: #b63d32;
+	padding: 80px 40px;
+}
+
+.transform >hr{
+	width: 106px;
+	height: 6px;
+	border: none;
+	background: #e5e5e5;
+	transform: skew(15deg);
+	margin: 40px 0;
+}
+
+.transform >h2{
+	transform: skew(15deg);
+	font-family: myfont;
+}
+
+.footerTop{
+	width: 100%;
+	height: 192px;
+	background: #3c1d17;
+	color: white;
+	text-align: center;
+	font-size: 21px;
+	padding: 30px 0;
+	line-height: bold;
+	font-family: myfont;
+}
+
+.footerDown{
+	width: 100%;	
+	height: 160px;
+	background: #b63d32;
+	color: white;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.footerDown >p >a{
+	color: white;
+	text-decoration: underline;
+}
+
+.footerDown img{
+	position: relative;
+	right: 200px;
+	top: 35px;
+}
+
+.footerDown > p {
+	margin-bottom: 20px;
+	font-family: newfont;
+}
+
+.myFacebook{
+	margin: 0 20px;
+	font-size: 25px;
+}
+
+.flickr{
+	font-size: 25px;
+}
+
+.chat {
+	width: 200px;
+	height: 56px;
+	background: #b63d32;
+	color: white;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+	box-shadow: 0 0 3px 0 hsla(0,1.4%,71%,.5);
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 2;
+	font-family: myfont;
+}
+
+.my{
+	display: none;
+}
+
+/*.chat i{
+	display: none;
+}*/
+
+.personalized{
+/*	width: 100%;*/
+	height: 362px;
+	margin: 50px 60px;
+}
+
+.personalized >img{
+	width: 619px;
+	height: 362px;
+	float: left;
+	clip-path: polygon(0% 0%, 94% 0%, 61% 177%, 0% 100%);
+}
+
+.personalized >h2{
+	padding: 80px 0 30px 0;
+	font-size: 25px;
+}
+
+.personalized >p{
+	/*width: 465px;
+	height: 145px;*/
+/*	float: right;*/
+	padding:0 192px 116px 0;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+.excellence >img{
+	width: 619px;
+	height: 362px;
+	float: right;
+	clip-path: polygon(0% 0%, 94% 0%, 61% 177%, 0% 100%);
+}
+
+
+@media only screen and (max-width: 425px) {
+	.header{
+		height: 225px;
+	}
+
+	.header h1{
+		font-size: 25px;
+	}
+
+	.header h2{
+		font-size: 20px;
+	}
+
+	.header img{
+		width: 80px;
+		height: 100px;
+	}
+
+	.menu li{
+		font-size: 15px;
+		margin: 13px 10px;
+	}
+
+	.menu li.log{
+		display: none;
+	}
+
+	.content{
+    	height: 500px;
+    	padding: 41px 10px;
+	}
+
+	.content h1, h2{
+		font-size: 24px;
+	}
+
+	.content p{
+		font-size: 14px;
+	}
+
+	.content a button{
+		width: 240px;
+    	height: 68px;
+    	margin: 20px;
+	}
+	.gallery{
+		height: 516px;
+	}
+
+	.gallery >marquee >img {
+    	height: 220px;
+	}
+
+	.transform {
+		width: 100%;
+		height: 270px;
+		top: 220px;
+		right: 0;
+		text-align: center;
+		transform: skew(0deg);
+	}
+
+	.transform h2{
+		transform: skew(0deg);
+		font-size: 20px;
+	}
+
+	.transform hr{
+		position:relative;	
+		left: 110px;
+		margin: 20px 0;
+	}
+
+	.footerTop img{
+		position: relative;
+		bottom: 55px;
+	}
+
+	.footerTop p{
+		font-size: 20px;
+	}
+
+	.footerDown{
+		height: 220px;
+	}
+
+	.footerDown img{
+		right: 10px;
+		top: 0;
+	}
+
+	.footerDown p{
+		margin: 20px 44px;
+	}
+
+	.myFacebook{
+		position: relative;
+		top: 15px;
+    	right: 30px;
+	}
+
+	.flickr{
+		position: relative;
+		top: 15px;
+    	right: 20px;
+	}
+
+	marquee{
+	clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+	}
+
+	.chat{
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+
+	.btnText{
+		display: none;
+	}
+
+	.my{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	.menu li{
+		font-size: 12px;
+	}
+
+	.footerDown p{
+		margin: 20px 5px;
+	}
+
+	.transform hr {
+    	position: relative;
+    	left: 70px;
+    }
+}
